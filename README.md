@@ -1,8 +1,11 @@
 # safe-window-location
-
+[![NPM version][npm-image]][npm-url]
 [![build status](https://img.shields.io/travis/forthedamn/safe-window-location.svg)](https://travis-ci.org/forthedamn/safe-window-location)
 [![code coverage](https://img.shields.io/codecov/c/github/forthedamn/safe-window-location.svg)](https://codecov.io/gh/forthedamn/safe-window-location)
 [![license](https://img.shields.io/github/license/forthedamn/safe-window-location.svg)](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/safe-window-location.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/safe-window-location
 
 > redirect parent(top) window location safely
 

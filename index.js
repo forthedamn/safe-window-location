@@ -53,7 +53,7 @@ function safeWindowLocation(context, location, target, configName) {
 
   const TYPE = 'text/html';
   target = target || 'parent';
-  const BODY = winLoc => `<script>window[${target}].location = ${JSON.stringify(winLoc)}</script>`;
+  const BODY = winLoc => `<script>window.${target}.location = ${JSON.stringify(winLoc)}</script>`;
   const DEFAULT_CONFIG_NAME = 'whiteList';
   let whiteList = [];
 

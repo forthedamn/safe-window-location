@@ -1,7 +1,7 @@
 {
   "name": "safe-window-location",
   "description": "location window safely in koa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "zhongguoxin <zhoguoxin@126.com>",
   "bugs": {
     "url": "https://github.com/forthedamn/safe-window-location/issues",
@@ -23,9 +23,6 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "latest",
     "jest": "^22.0.3"
-  },
-  "engines": {
-    "node": ">=8.3"
   },
   "homepage": "https://github.com/forthedamn/safe-window-location",
   "keywords": [

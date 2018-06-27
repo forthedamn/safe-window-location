@@ -34,6 +34,20 @@ describe('safe location', () => {
     expect(context.type).toEqual('text/html');
   });
 
+  it('when //www.baidu.com, body should be set /, cause browser while add the protocol', () => {
+    location(context, '//www.baidu.com', 'parent', 'whiteList');
+    expect(context.body).toContain('location = "/"');
+    expect(context.body).toContain('parent');
+    expect(context.type).toEqual('text/html');
+  });
+
+  it('body should be set www.baidu.com, but not have the protocol, same as the path', () => {
+    location(context, 'www.baidu.com', 'parent', 'whiteList');
+    expect(context.body).toContain('location = "www.baidu.com"');
+    expect(context.body).toContain('parent');
+    expect(context.type).toEqual('text/html');
+  });
+
   it('body should be encode', () => {
     location(context, 'javascript:alert(1)', null, 'whiteList');
     expect(context.body).toContain('location = "alert(1)"');

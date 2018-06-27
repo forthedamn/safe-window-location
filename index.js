@@ -3,6 +3,11 @@ const urlUtil = require('url');
 const xssFilter = require('xss-filters');
 require('typeis');
 
+// browser will add the protocol,but node not get get the hostname
+function isProtocol(path) {
+  return /\/\//.test(path);
+}
+
 function isValidate(url, whiteList) {
   url = urlUtil.parse(url);
 
@@ -10,6 +15,9 @@ function isValidate(url, whiteList) {
 
   // 如果只是 path
   if (!hostname) {
+    if (isProtocol(url.path)) {
+      return false;
+    }
     return url.path;
   }
 

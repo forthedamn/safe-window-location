@@ -1,7 +1,7 @@
 {
   "name": "safe-window-location",
   "description": "location window safely in koa",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "zhongguoxin <zhoguoxin@126.com>",
   "bugs": {
     "url": "https://github.com/forthedamn/safe-window-location/issues",
